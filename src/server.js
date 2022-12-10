@@ -44,7 +44,7 @@ app.use(express.urlencoded({ extended : true  , limit : "50mb"}));
 router.get("/" , (req,res) => {
     res.json({message : "nothing to view here "});
 });
-
+app.use('/.netlify/functions/api',router);
 app.use('/.netlify/functions/api',user_route);
 app.use('/.netlify/functions/api',book_route);
 app.use('/.netlify/functions/api',Admin_route);
