@@ -10,8 +10,8 @@ const express           = require("express"),
       {MONGO_URI}       = require("./key"),
       cors              = require("cors"),
       server            = require("http").createServer(app);
-const URL               = "http://localhost:3000";
-// const URL               = "https://stjbookbank.herokuapp.com";
+// const URL               = "http://localhost:3000";
+const URL               = "https://reactbookbank.netlify.app";
 
 var io  = require("socket.io")(server , {
     cors: {
